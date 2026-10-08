@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyza Şahin | Energy Systems Engineering</title>
+  <meta name="description" content="Portfolio of Beyza Şahin, final-year Energy Systems Engineering student at Yaşar University. Renewable energy forecasting with ANN and LSTM, microgrid modeling, PV design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#top">Beyza Şahin</a>
+  <nav aria-label="Main">
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Forecasting wind and solar power, one model at a time.</h1>
+      <p class="lead">I'm Beyza, a final-year Energy Systems Engineering student at Yaşar University, graduating in February 2027. I'm looking for a long-term internship or a part-time position in the energy sector.</p>
+      <p class="actions">
+        <a class="btn primary" href="cv/Beyza_Sahin_CV.pdf">Download CV (PDF)</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </p>
+    </div>
+
+    <figure class="forecast">
+      <svg viewBox="0 0 640 260" role="img" aria-labelledby="chart-title chart-desc">
+        <title id="chart-title">Illustration of a renewable power forecast</title>
+        <desc id="chart-desc">A wind power curve with a dashed prediction line closely following it, and a solar power curve that rises and falls each day.</desc>
+        <g class="grid">
+          <line x1="0" y1="65" x2="640" y2="65"/>
+          <line x1="0" y1="130" x2="640" y2="130"/>
+          <line x1="0" y1="195" x2="640" y2="195"/>
+        </g>
+        <path class="solar" d="M0,230 C40,230 60,110 100,110 C140,110 160,230 200,230 L240,230 C280,230 300,130 340,130 C380,130 400,230 440,230 L480,230 C520,230 540,90 580,90 C620,90 630,230 640,230"/>
+        <path class="wind" d="M0,150 C40,120 70,170 110,140 S180,80 220,110 S300,190 350,150 S430,70 480,100 S560,160 640,120"/>
+        <path class="pred" d="M0,152 C40,126 70,166 110,144 S180,88 220,112 S300,186 350,154 S430,78 480,104 S560,158 640,124"/>
+      </svg>
+      <figcaption>
+        <span class="key wind-key">Wind, measured</span>
+        <span class="key pred-key">Wind, predicted</span>
+        <span class="key solar-key">Solar</span>
+        <span class="note">Illustrative curves, not project data.</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project featured">
+      <div class="media">
+        <!-- Replace this block with your own image or video, for example:
+             <img src="assets/images/capstone-results.png" alt="Predicted vs actual wind power from the ANN and LSTM models" loading="lazy">
+             or
+             <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Capstone presentation" allowfullscreen loading="lazy"></iframe> -->
+        <div class="placeholder">Add capstone result plot or presentation video here</div>
+      </div>
+      <div class="body">
+        <h3>Hybrid Renewable Energy Prediction Model Using ANN and LSTM</h3>
+        <p class="meta">Capstone project. MATLAB.</p>
+        <p>I developed a hybrid prediction model that combines Artificial Neural Network (ANN) and Long Short-Term Memory (LSTM) approaches. I applied it first to wind energy, then to combined wind and solar energy, and compared the results.</p>
+        <p>Within each model I tested different dataset-length scenarios to see how the amount of training data changes prediction performance.</p>
+        <p>I co-authored the oral presentation, delivered with my academic advisor at the International Conference on Nuclear and Renewable Energy Resources (NURER 2026) in Almaty, Kazakhstan.</p>
+      </div>
+    </article>
+
+    <div class="project-grid">
+      <article class="project">
+        <div class="media"><div class="placeholder">Add Simulink model screenshot</div></div>
+        <h3>Microgrid Modeling</h3>
+        <p class="meta">Renewable Energy Systems Integration course. MATLAB/Simulink.</p>
+        <p>Modeled a microgrid in Simulink to study how renewable sources integrate into a local power system.</p>
+      </article>
+
+      <article class="project">
+        <div class="media"><div class="placeholder">Add PV*SOL layout or report image</div></div>
+        <h3>Rooftop PV System Design</h3>
+        <p class="meta">Solar Energy course. PV*SOL.</p>
+        <p>Designed a rooftop photovoltaic system and simulated its performance in PV*SOL.</p>
+      </article>
+
+      <article class="project">
+        <div class="media"><div class="placeholder">Add schematic or results chart</div></div>
+        <h3>Heat Pump Design</h3>
+        <p class="meta">Heat Pumps course.</p>
+        <p>Course project on designing a heat pump system.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <article class="entry">
+      <div class="when">Aug 2025 to Sep 2025</div>
+      <div>
+        <h3>Engineering Intern, SOCAR Türkiye – Petkim</h3>
+        <p class="meta">Aliağa, İzmir. Energy Management Directorate.</p>
+        <ul>
+          <li>Studied Petkim's cogeneration system, including the gas turbine, heat recovery unit, feedwater system and steam boilers.</li>
+          <li>Analyzed gas turbine operating data in Excel to examine the effect of ambient temperature on electricity output.</li>
+          <li>Carried out an HRSG project evaluating steam generation from gas turbine exhaust heat, with energy balance, efficiency and CO2 emission calculations.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="when">Jul 2024 to Aug 2024</div>
+      <div>
+        <h3>Sales Consultant, ATÜ Duty Free</h3>
+        <p class="meta">Adnan Menderes Airport.</p>
+        <ul>
+          <li>Provided customer service and sales consulting in a fast-paced corporate environment.</li>
+          <li>Communicated in English with international customers.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="when">2021 to 2022</div>
+      <div>
+        <h3>Drama Instructor</h3>
+        <p class="meta">Melisa Karan Art Center (2022) and Prömiyer Kindergarten (2021 to 2022).</p>
+        <ul>
+          <li>Led drama classes using theater techniques to develop group dynamics, diction, body language and stage awareness.</li>
+          <li>Designed interactive games and role plays to support children's social and emotional development.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <article class="entry">
+      <div class="when">2021 to Feb 2027 (expected)</div>
+      <div>
+        <h3>B.Sc. in Energy Systems Engineering, Yaşar University</h3>
+        <p class="meta">İzmir. Currently in final semester.</p>
+        <p>Relevant courses: Renewable Energy Systems Integration, Solar Energy, Heat Pumps.</p>
+      </div>
+    </article>
+
+    <h3 class="subhead">Certifications</h3>
+    <ul class="plain">
+      <li>Menalinks Certificate, Renewable Energy Systems Integration course, RENAC (Renewables Academy)</li>
+      <li>Drama Instructor Certificate, approved by the Turkish Ministry of National Education</li>
+    </ul>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Software</dt>
+      <dd>MATLAB, Simulink, PV*SOL, Microsoft Excel</dd>
+      <dt>Technical areas</dt>
+      <dd>Renewable energy forecasting, ANN/LSTM modeling, microgrids, photovoltaic systems, heat pumps, gas turbines, HRSG, thermodynamic analysis</dd>
+      <dt>Languages</dt>
+      <dd>Turkish (native), English (B1), German (A1)</dd>
+    </dl>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I'm based in İzmir, Türkiye, and happy to talk about internships and part-time roles in the energy sector.</p>
+    <ul class="plain">
+      <li>Email: <a href="mailto:33beyzasahin@gmail.com">33beyzasahin@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/beyza-%C5%9Fahin-46a0672b6">linkedin.com/in/beyza-şahin-46a0672b6</a></li>
+      <li>CV: <a href="cv/Beyza_Sahin_CV.pdf">Download as PDF</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Beyza Şahin. Built with plain HTML and CSS, hosted on GitHub Pages.</p>
+</footer>
+
+</body>
+</html>
